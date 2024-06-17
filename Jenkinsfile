@@ -11,9 +11,9 @@ pipeline{
         mvn test
       }
     }
-  stage('deploy'){
+  stage('Deploy'){
       steps{
-        mvn package
+        mvn install
       }
     }
   }
